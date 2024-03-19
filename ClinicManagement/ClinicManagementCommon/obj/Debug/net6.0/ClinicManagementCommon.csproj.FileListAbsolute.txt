@@ -1,0 +1,12 @@
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\bin\Debug\net6.0\ClinicManagementCommon.deps.json
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\bin\Debug\net6.0\ClinicManagementCommon.dll
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\bin\Debug\net6.0\ClinicManagementCommon.pdb
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ClinicManagementCommon.csproj.AssemblyReference.cache
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ClinicManagementCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ClinicManagementCommon.AssemblyInfoInputs.cache
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ClinicManagementCommon.AssemblyInfo.cs
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ClinicManagementCommon.csproj.CoreCompileInputs.cache
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ClinicManagementCommon.dll
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\refint\ClinicManagementCommon.dll
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ClinicManagementCommon.pdb
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementCommon\obj\Debug\net6.0\ref\ClinicManagementCommon.dll

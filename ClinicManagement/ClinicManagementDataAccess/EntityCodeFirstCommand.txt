@@ -1,0 +1,1 @@
+Scaffold-DbContext "Data Source=ONE;User ID=sa;Password=Nadra@123;Database=ClinicManagement;Persist Security Info=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force -NoPluralize -NoOnConfiguring -Context Entities

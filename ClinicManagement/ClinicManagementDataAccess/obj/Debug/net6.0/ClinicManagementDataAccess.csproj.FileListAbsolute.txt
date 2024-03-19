@@ -1,0 +1,14 @@
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\bin\Debug\net6.0\ClinicManagementDataAccess.deps.json
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\bin\Debug\net6.0\ClinicManagementDataAccess.runtimeconfig.json
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\bin\Debug\net6.0\ClinicManagementDataAccess.dll
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\bin\Debug\net6.0\ClinicManagementDataAccess.pdb
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.csproj.AssemblyReference.cache
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.AssemblyInfoInputs.cache
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.AssemblyInfo.cs
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.dll
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\refint\ClinicManagementDataAccess.dll
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.pdb
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ClinicManagementDataAccess.genruntimeconfig.cache
+C:\Users\one\source\repos\ClinicManagement\ClinicManagementDataAccess\obj\Debug\net6.0\ref\ClinicManagementDataAccess.dll

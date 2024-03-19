@@ -1,0 +1,90 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using ClinicManagementFrontEnd.Classes
+@model ClinicManagementCommon.Models.PatientManagement
+@inject ClinicManagementFrontEnd.Lookup.iLookup iLookup
+<h2>Patient Data Entry Form</h2>
+<form asp-action="Update" asp-controller="PatientManagement" method="post">
+    <div class="form-group">
+        <input asp-for="PatientInfo.Id" hidden="hidden"/>
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="PatientInfo.Name">Name:</label>
+                <input asp-for="PatientInfo.Name" class="form-control" />
+                <span asp-validation-for="PatientInfo.Name" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="PatientInfo.Dob">Date of Birth:</label>
+                <input asp-for="PatientInfo.Dob" class="form-control" />
+                <span asp-validation-for="PatientInfo.Dob" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="PatientInfo.Gender">Gender:</label>
+                <select asp-items="iLookup.GetGenders()" asp-for="PatientInfo.Gender" class="form-control">
+                    <option value="">Select Gender</option>
+                </select>
+                <span asp-validation-for="PatientInfo.Gender" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="PatientInfo.Phone">Phone:</label>
+                <input asp-for="PatientInfo.Phone" class="form-control" />
+                <span asp-validation-for="PatientInfo.Phone" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="PatientInfo.Address">Address:</label>
+        <input asp-for="PatientInfo.Address" class="form-control" />
+        <span asp-validation-for="PatientInfo.Address" class="text-danger"></span>
+    </div>
+
+    <div class="card">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="visitInfo.DoctorId">Doctor:</label>
+                    <select asp-items="iLookup.GetDoctors()" asp-for="visitInfo.DoctorId" class="form-control">
+                        <option value="">Select Doctor</option>
+
+                    </select>
+                    <span asp-validation-for="visitInfo.DoctorId" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="visitInfo.VisitDetail">Visit Remarks:</label>
+                    <input asp-for="visitInfo.VisitDetail" class="form-control" />
+                    <span asp-validation-for="visitInfo.VisitDetail" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card disease-info">
+
+        <div class="form-group">
+            <label asp-for="DiseaseInfo.DiseaseName">Disease Name:</label>
+            <input asp-for="DiseaseInfo.DiseaseName" class="form-control" />
+            <span asp-validation-for="DiseaseInfo.DiseaseName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DiseaseInfo.DiseaseDetail">Disease Detail:</label>
+            <textarea asp-for="DiseaseInfo.DiseaseDetail" class="form-control" rows="3"></textarea>
+            <span asp-validation-for="DiseaseInfo.DiseaseDetail" class="text-danger"></span>
+        </div>
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
