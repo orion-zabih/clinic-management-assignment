@@ -41,7 +41,8 @@ namespace ClinicManagementCommon.Models
         public string? Address { get; set; }
 
         public string Disease { get; set; } = null!;
-
+        public string VisitDetail { get; set; } = null!;
+        public string VisitDate { get; set; } = null!;
         public string Doctor { get; set; } = null!;
         public string? CreateDateTime { get; set; }
         public PatientReport()

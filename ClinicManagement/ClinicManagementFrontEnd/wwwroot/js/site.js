@@ -6,7 +6,8 @@
 
     var columns;
     var _gender = '';
-    var _name= '';
+var _name = '';
+var _age = '';
     $(document).ready(function () {
       FormatNumber = function (input) {
         return $.fn.dataTable.render.number(',', '.', 0).display(input);
@@ -21,9 +22,11 @@
       ];
                 columns.push({
                     "title": "Action", "data": "id", "class": "center", "render": function (id) {
-                        return '<a class="btn btn-outline-info" href="/PatientManagement/Update?PatientId=' + id + '" type="button" >Update</a> ';
-                    }
+                        return '<a class="btn btn-outline-info" href="/PatientManagement/Update?PatientId=' + id + '" type="button" >Update</a> ' + '<a class="btn btn-outline-info" href="/PatientManagement/ShowVisits?PatientId=' + id + '" type="button" >Show Visits</a> ';
+                    },
+                    
                 });
+      
             console.log(columns);
 
             
@@ -43,10 +46,12 @@
                 "url": "/PatientManagement/GetPatientReport",
             "type": "POST",
             "dataType": "json",
-            "data": function (d) {
+                "data": function (d) {
+                    console.log(_age);
                 d.AdditionalParameters = JSON.stringify({
                     Name: _name,
-                    gender: _gender
+                    gender: _gender,
+                    age:_age
                 });
           }, "error": function (xhMessage, error, thrown) {
 
@@ -58,7 +63,9 @@
 
             $("#SearchBtn").on('click', function () {
                 _gender = $("#gender").val();
-            _name = $("#Name").val();
+                _name = $("#Name").val();
+                _age = $("#age").val();
+                console.log(_age);
             table.draw();
       })
     });

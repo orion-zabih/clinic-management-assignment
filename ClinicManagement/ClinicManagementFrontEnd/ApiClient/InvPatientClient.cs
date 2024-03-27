@@ -62,7 +62,7 @@ namespace ClinicManagementCommon.ApiClient
                 try
                 {
 
-                    invSaleApiUrl = "/api/PatientManagement" + "/GetPatientInfo?Name="+searchCriteria.Name+"&gender="+searchCriteria.gender;
+                    invSaleApiUrl = "/api/PatientManagement" + "/GetPatientInfo?Name="+searchCriteria.Name+"&gender="+searchCriteria.gender + "&age=" + searchCriteria.age;
                     // var json = JsonConvert.SerializeObject(signinDTO);
                     var responses = ApiManager.GetAsync(invSaleApiUrl);
 
@@ -165,6 +165,49 @@ namespace ClinicManagementCommon.ApiClient
                         {
                             //var jsonResult = streamReader.ReadToEnd();
                             var response = JsonConvert.DeserializeObject<PatientManagement>(responses);
+                            if (response != null)
+                            {
+                                return response;
+                            }
+                            return null;
+
+                        }
+
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        internal List<PatientReport> GetPatientVisit(string patientId)
+        {
+            try
+            {
+                try
+                {
+
+                    invSaleApiUrl = "/api/PatientManagement" + "/GetPatientVisits?p_id=" + patientId;
+                    // var json = JsonConvert.SerializeObject(signinDTO);
+                    var responses = ApiManager.GetAsync(invSaleApiUrl);
+
+                    // List data response.
+                    if (responses != null)
+                    {
+                        //using (var streamReader = new StreamReader(responses))
+                        {
+                            //var jsonResult = streamReader.ReadToEnd();
+                            var response = JsonConvert.DeserializeObject<List<PatientReport>>(responses);
                             if (response != null)
                             {
                                 return response;

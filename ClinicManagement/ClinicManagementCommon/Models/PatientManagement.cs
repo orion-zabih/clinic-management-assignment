@@ -19,10 +19,23 @@ namespace ClinicManagementCommon.Models
         }
 
     }
+    public class PatientVisit
+    {
+        public int PatientId { get; set; }
+        public List<VisitInfo> visitInfos { get; set; }
+        public PatientVisit()
+        {
+
+
+            visitInfos = new List<VisitInfo>(); ;
+            
+        }
+
+    }
     public class SearchCriteria
     {
         public string Name { get; set; }
-        public int age { get; set; }
+        public string age { get; set; }
         public string gender { get; set; }
         public string disease { get; set; }
     }

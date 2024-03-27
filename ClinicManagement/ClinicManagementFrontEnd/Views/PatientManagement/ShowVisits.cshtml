@@ -3,30 +3,15 @@
 *@
 @{
 }
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
 
 @using ClinicManagementFrontEnd.Classes
-@model ClinicManagementCommon.Models.SearchCriteria
+@model List<ClinicManagementCommon.Models.PatientReport>
 @inject ClinicManagementFrontEnd.Lookup.iLookup iLookup
-<div class="form-group">
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="gender">Gender:</label>
-            <select asp-items="iLookup.GetGenders()" asp-for="gender" class="form-control">
-                <option value="">Select Gender</option>
-            </select>
-            <span asp-validation-for="gender" class="text-danger"></span>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="Name">Name:</label>
-            <input asp-for="Name" class="form-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="age">Age:</label>
-            <input asp-for="age" class="form-control" />
-        </div>
-    </div>
-</div>
 <button type="button" id="SearchBtn" class="btn btn-primary">Submit</button>
 <div class="card-body">
 
@@ -44,6 +29,17 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Dob</td>
+                        <td>@item.Disease</td>
+                        <td>@item.VisitDetail</td>
+                        <td>@item.VisitDate</td>
+                        <td>@item.Doctor</td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>

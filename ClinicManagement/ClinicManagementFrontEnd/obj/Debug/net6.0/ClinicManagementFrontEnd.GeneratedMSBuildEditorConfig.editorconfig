@@ -31,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudE1hbmFnZW1lbnRcUGF0aWVudFJlcG9ydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/one/source/repos/ClinicManagement/ClinicManagementFrontEnd/Views/PatientManagement/ShowVisits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudE1hbmFnZW1lbnRcU2hvd1Zpc2l0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/one/source/repos/ClinicManagement/ClinicManagementFrontEnd/Views/PatientManagement/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudE1hbmFnZW1lbnRcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

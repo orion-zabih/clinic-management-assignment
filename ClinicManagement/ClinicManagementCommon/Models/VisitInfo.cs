@@ -19,8 +19,10 @@ namespace ClinicManagementCommon.Models
 
         public string? CreateDateTime { get; set; }
 
+        public List<DiseaseInfo> diseaseInfos { get; set; }
         public VisitInfo()
         {
+            diseaseInfos = new List<DiseaseInfo>();
         }
     }
 }

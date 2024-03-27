@@ -31,6 +31,14 @@ namespace ClinicManagementFrontEnd.Controllers
             model=invPatientClient.GetPatientManagement(PatientId);
             return View(model);
         }
+        [HttpGet]
+        public IActionResult ShowVisits(string PatientId)
+        {
+            List<PatientReport> model = new List<PatientReport>();
+            InvPatientClient invPatientClient = new InvPatientClient();
+            model = invPatientClient.GetPatientVisit(PatientId);
+            return View(model);
+        }
         [HttpPost]
         public IActionResult Update(PatientManagement model)
         {
@@ -50,11 +58,18 @@ namespace ClinicManagementFrontEnd.Controllers
         {
             var Name = GetAdditionalParameterValue(request, "Name");
             var gender = GetAdditionalParameterValue(request, "gender");
+            var age = GetAdditionalParameterValue(request, "age");
             InvPatientClient invPatientClient = new InvPatientClient();
-            var a =invPatientClient.GetPatientInfo(new SearchCriteria { Name = Name, gender = gender });
-            var response = DataTablesResponse.Create(request, a.Count(), a.Count(), a);
-            var dtjson = new DataTablesJsonResult(response);
-            return dtjson;
+            var a =invPatientClient.GetPatientInfo(new SearchCriteria { Name = Name, gender = gender,age=age });
+            if (a != null)
+            {
+
+                var response = DataTablesResponse.Create(request, a.Count(), a.Count(), a);
+                var dtjson = new DataTablesJsonResult(response);
+                return dtjson;
+            }
+            else
+                return NotFound();
 
         }
         public string GetAdditionalParameterValue(IDataTablesRequest request, string paramName)
